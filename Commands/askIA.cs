@@ -25,8 +25,7 @@ namespace Gepeteco.Commands
             {
                 string gemini_token = Env.GetString("GEMINI_TOKEN");
 
-                var genAI = new GoogleAi(gemini_token);
-                var model = genAI.CreateGenerativeModel("models/gemini-1.5-flash");
+                var model = Program.Model;
 
                 var response = await model.GenerateContentAsync(prompt);
 

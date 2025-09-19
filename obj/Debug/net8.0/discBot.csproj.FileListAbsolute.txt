@@ -34,3 +34,4 @@
 /home/soranzo/Documents/discBot/bin/Debug/net8.0/System.Text.Encodings.Web.dll
 /home/soranzo/Documents/discBot/bin/Debug/net8.0/System.Text.Json.dll
 /home/soranzo/Documents/discBot/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
+/home/soranzo/Documents/discBot/obj/Debug/net8.0/discBot.sourcelink.json
