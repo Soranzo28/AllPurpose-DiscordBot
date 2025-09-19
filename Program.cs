@@ -44,21 +44,11 @@ namespace Gepeteco
                 EnableDefaultHelp = false,
             };
 
-
             Client = new DiscordClient(discordConfig);
             Commands = Client.UseCommandsNext(commandsConfig);
 
             Commands.RegisterCommands(Assembly.GetExecutingAssembly());
             Client.Ready += Client_Ready;
-
-            Commands.CommandErrored += (sender, eventArgs) =>
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"[ERRO DE COMANDO] O comando '{eventArgs.Command?.Name}' falhou para o usuário '{eventArgs.Context.User.Username}'.");
-                Console.WriteLine($"[ERRO DE COMANDO] Exceção: {eventArgs.Exception}");
-                Console.ResetColor();
-                return Task.CompletedTask;
-            };
 
             await Client.ConnectAsync();
             await Task.Delay(-1);

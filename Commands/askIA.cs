@@ -4,6 +4,7 @@ using DSharpPlus.CommandsNext.Attributes;
 using DSharpPlus.Entities;
 using GenerativeAI;
 using GenerativeAI.Types;
+using Gepeteco.Helpers;
 
 namespace Gepeteco.Commands
 {
